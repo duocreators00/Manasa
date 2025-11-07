@@ -42,14 +42,19 @@
 
   <script src="app.js"></script>
  <script>
-  document.getElementById("video-button").addEventListener("click", function() {
-    const videoContainer = document.getElementById("video-container");
+document.addEventListener("DOMContentLoaded", () => {
+  const videoButton = document.getElementById("video-button");
+  const videoContainer = document.getElementById("video-container");
+
+  videoButton.addEventListener("click", () => {
     videoContainer.classList.toggle("hidden");
     console.log("Clicked! Hidden:", videoContainer.classList.contains("hidden"));
   });
+});
 </script>
 </body>
 </html>
+
 
 
 
