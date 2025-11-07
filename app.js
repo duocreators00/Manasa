@@ -31,7 +31,14 @@ function createNote() {
 document.getElementById('play-music').addEventListener('click', function() {
   document.getElementById('bg-music').play();
 });
+// Video Button Functionality
+document.getElementById("video-button").addEventListener("click", function() {
+  const videoContainer = document.getElementById("video-container");
+  videoContainer.classList.toggle("hidden");
+});
+
 
 // Generate notes every 800ms
+
 
 setInterval(createNote, 800);
