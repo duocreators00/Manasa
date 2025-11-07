@@ -47,13 +47,13 @@ document.addEventListener("DOMContentLoaded", () => {
   const videoContainer = document.getElementById("video-container");
 
   videoButton.addEventListener("click", () => {
-    videoContainer.classList.toggle("hidden");
-    console.log("Clicked! Hidden:", videoContainer.classList.contains("hidden"));
+    videoContainer.classList.remove("hidden");
   });
 });
 </script>
 </body>
 </html>
+
 
 
 
