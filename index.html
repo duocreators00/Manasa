@@ -41,15 +41,16 @@
   </footer>
 
   <script src="app.js"></script>
-  <script>
-    // Video Button Functionality
-    document.getElementById("video-button").addEventListener("click", function() {
-      const videoContainer = document.getElementById("video-container");
-      videoContainer.classList.toggle("hidden");
-    });
-  </script>
+ <script>
+  document.getElementById("video-button").addEventListener("click", function() {
+    const videoContainer = document.getElementById("video-container");
+    videoContainer.classList.toggle("hidden");
+    console.log("Clicked! Hidden:", videoContainer.classList.contains("hidden"));
+  });
+</script>
 </body>
 </html>
+
 
 
 
